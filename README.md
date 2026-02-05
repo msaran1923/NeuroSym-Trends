@@ -218,8 +218,8 @@ Exact filenames may vary slightly across scripts; the runner prints paths as it 
 ```bibtex
 @article{neurosymtrends2026,
   title={A Neuro-Symbolic Framework for LLM-Assisted Topic Discovery and Trend Analysis in Scientific Corpora},
-  author={Murat Saran and co-authors},
-  journal={IEEE Access},
+  author={Onur Demir and Murat Saran},
+  journal={},
   year={2026}
 }
 ```
@@ -258,18 +258,11 @@ Our framework addresses the **"symbolic disconnect"** in neural topic models by 
 ## 📁 Repository Structure
 
 ```
-├── data/                    # Processed datasets and corpus samples
-│   ├── processed/          # Cleaned and preprocessed data
-│   └── raw/               # Raw thesis metadata (not included due to copyright)
-├── src/                    # Source code
-│   ├── preprocessing/     # Data cleaning and preparation
-│   ├── modeling/         # Topic modeling implementations
-│   └── analysis/         # Trend analysis and statistical tests
+├── src/                   # Source code
 ├── results/               # Experimental outputs and figures
 ├── configs/               # Configuration files for experiments
-├── environment.yml       # Conda environment specification
-├── requirements.txt      # Python package dependencies
-└── README.md            # This file
+├── environment.yml        # Conda environment specification
+└── README.md              # This file
 ```
 
 ## ⚙️ Installation
@@ -422,22 +415,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 For questions or collaborations, please open an issue or contact:
-- **Your Name** - [email@example.com](mailto:email@example.com)
-- **Project Link**: [https://github.com/[username]/neuro-symbolic-topic-analysis](https://github.com/[username]/neuro-symbolic-topic-analysis)
+- **Your Name** - [saran@cankaya.edu.tr](mailto:saran@cankaya.edu.tr)
+- **Project Link**: [https://github.com/msaran1923/NeuroSym-Trends(https://github.com/msaran1923/NeuroSym-Trends)
 
 ---
 
 *Note: This framework is research software and may require adaptation for production use.*
-```
-
-This README provides:
-
-1. **Clear project description** with academic context
-2. **Comprehensive installation and usage instructions**
-3. **Well-organized repository structure**
-4. **Citation information** for academic use
-5. **Extensibility guidelines** for researchers
-6. **Professional formatting** with badges (you can add actual badges later)
-7. **Contact information** and licensing details
-
-You should replace `[username]` with your actual GitHub username and fill in the author information, contact details, and any specific implementation notes relevant to your actual codebase.
