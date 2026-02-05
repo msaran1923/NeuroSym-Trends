@@ -402,7 +402,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## 🙏 Acknowledgements
 
@@ -413,9 +413,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📬 Contact
 
-For questions or collaborations, please open an issue or contact:
-- **Your Name** - [saran@cankaya.edu.tr](mailto:saran@cankaya.edu.tr)
-- **Project Link**: [https://github.com/msaran1923/NeuroSym-Trends(https://github.com/msaran1923/NeuroSym-Trends)
+For questions or collaborations, please contact:
+- Murat Saran [saran@cankaya.edu.tr](mailto:saran@cankaya.edu.tr)
 
 ---
 
