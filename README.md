@@ -260,7 +260,6 @@ Our framework addresses the **"symbolic disconnect"** in neural topic models by 
 ```
 ├── src/                   # Source code
 ├── results/               # Experimental outputs and figures
-├── configs/               # Configuration files for experiments
 ├── environment.yml        # Conda environment specification
 └── README.md              # This file
 ```
