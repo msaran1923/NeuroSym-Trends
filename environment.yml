@@ -1,0 +1,51 @@
+name: neurosym-trends
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+
+# Tip (GPU): after creating this environment, you can enable CUDA builds via:
+#   conda install pytorch-cuda=12.1 -c pytorch -c nvidia
+# and optionally replace FAISS with GPU:
+#   conda install faiss-gpu -c conda-forge
+#
+# Ollama is installed separately (outside conda).
+
+dependencies:
+  - python=3.11.9
+  - pip
+
+  # Core scientific stack
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scipy=1.13.0
+  - statsmodels>=0.14
+
+  # ML / clustering
+  - scikit-learn=1.5.0
+  - umap-learn=0.5.6
+  - hdbscan>=0.8
+  - joblib
+  - tqdm=4.66.4
+
+  # Topic modeling + evaluation
+  - gensim=4.3.3
+  - matplotlib=3.8.4
+
+  # Text cleaning + utilities
+  - ftfy
+  - requests
+  - ipython
+
+  # Ontology / retrieval
+  - rdflib
+  - faiss-cpu=1.8.0
+
+  # Transformers / embeddings
+  - pytorch=2.3.0
+  - transformers=4.40.0
+  - sentence-transformers>=2.6
+
+  # BERTopic (kept as pip for broader platform compatibility)
+  - pip:
+      - bertopic==0.16.0
