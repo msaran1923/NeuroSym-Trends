@@ -1,0 +1,18 @@
+{
+  "run_dir": "/home/murats/Documents/local_run_final/Feb03_run5/run_llm_v33",
+  "docs": 12535,
+  "topics": 49,
+  "coverage": 0.9506182688472278,
+  "outliers": 619,
+  "diversity": 0.9320987654320988,
+  "coherence_cv": 0.6021570660686089,
+  "coherence_npmi": 0.12861277334112522,
+  "silhouette": 0.004394193645566702,
+  "certainty": 0.5783558712862432,
+  "entropy": 3.369230030570264,
+  "entropy_norm": 0.8657208638862216,
+  "emerging_topics_count": 15,
+  "avg_semantic_drift": 0.16793931417332378,
+  "wall_clock_seconds": 11905.281713724136,
+  "llm_calls": 15715
+}

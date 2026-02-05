@@ -1,0 +1,27 @@
+{
+  "run_started_at_utc": "2026-02-03T19:02:16Z",
+  "command": "python 01_thesis_topic_trends_pipeline.py --data data.csv --run_dir run_main_v35 --seed 35 --cso_ttl CSO.3.5.ttl --cso_topk 10 --cso_sim_threshold 0.55 --cso_doc_batch_size 256 --embed_model local_bge-large-en-v1.5 --batch_size 512 --umap_neighbors 15 --umap_components 5 --umap_min_dist 0.0 --min_cluster_size 30 --min_samples 5 --reduce_topics none --max_outliers 0 --reassign_sim_threshold 0.62 --llm_mode ollama --llm_model qwen2.5:14b --llm_topk 8 --llm_sim_floor 0.53 --ollama_url http://localhost:11434 --augment_min_cluster_size 4 --augment_min_samples 4 --augment_quality_min_topword_weight 0.0015 --augment_cso_purity_min 0.70 --augment_umap_neighbors 15 --augment_umap_components 5 --augment_umap_min_dist 0.0 --augment_cluster_selection_method leaf --symbolic_min_cluster_size 4 --symbolic_top1_sim_min 0.65 --symbolic_max_topics 250 --split_topics --split_min_topic_size 60 --split_trigger_mean_sim 0.55 --split_trigger_std_sim 0.10 --split_umap_neighbors 15 --split_umap_components 5 --split_umap_min_dist 0.0 --split_min_cluster_size 4 --split_min_samples 2 --split_cluster_selection_method leaf --split_quality_min_topword_weight 0.0035 --split_duplicate_sim_threshold 0.90 --split_cso_purity_min 0.0 --ctfidf_topn 15 --ctfidf_weighting confidence --vectorizer_min_df 10 --entropy_threshold 1.0 --trend_alpha 0.05 --min_year_docs 10 --stability_runs 5 --reassign_margin_threshold 0.004 --reassign_margin_quantile 0.0 --entropy_quantile 0.85 --entropy_auto --entropy_gate --cso_sim_threshold_gate 0.55 --kw_refine --kw_refine_core_k 12 --kw_refine_display_k 12 --kw_refine_candidate_pool 60 --kw_refine_min_df_global 10 --kw_refine_weighting none --merge_micro_topics --micro_merge_min_topic_size 10 --micro_merge_sim_threshold 0.80 --extra_stopwords aim,aims,purpose,purposes,objective,objectives,study,studies,research,paper,thesis,dissertation,propose,proposes,proposed,present,presents,presented,approach,approaches,method,methods,methodology,result,results,conclusion,conclusions,experiment,experiments,evaluate,evaluation,performance,based,using,use,used,novel,new,implementation,application,applications,problem,problems,challenge,challenges,existing",
+  "run_dir": "run_main_v35",
+  "wall_clock_seconds": 356.22223441499955,
+  "stage_times_seconds": {
+    "01:Preprocessing": 3.6038331919990014,
+    "02:CSO extraction": 40.25575022400153,
+    "03:BERTopic": 85.60899616800452,
+    "04:Outlier reassignment": 0.07139013799314853,
+    "05:LLM gating (ollama)": 170.7713503910054,
+    "06:Augmentation": 2.7888983499942697,
+    "07:Topic splitting": 0.19748935900133802,
+    "08:Finalize & keywords": 4.882974835003552,
+    "09:Topic trends": 0.10029558699898189,
+    "10:Semantic shift": 0.10790449700289173,
+    "11:Trends & stability": 47.83245287099999
+  },
+  "llm_calls": 984,
+  "llm_assigned": 839,
+  "mk_method": "classic",
+  "prevalence_mode_used": "relative",
+  "seed": 35,
+  "stability_runs": 5,
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5090"
+}
