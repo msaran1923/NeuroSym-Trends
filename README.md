@@ -1,6 +1,6 @@
 # NeuroSym-Trends: Neuro-Symbolic, Uncertainty-Gated Topic Discovery & Trend Analysis
 
-Reference implementation for the paper **“A Neuro-Symbolic Framework for LLM-Assisted Topic Discovery and Trend Analysis in Scientific Corpora.”**  
+Reference implementation for the paper **“An Uncertainty-Gated Neuro-Symbolic Framework for High-Coverage Topic Modeling and Trend Analysis in Scholarly Corpora with LLM Assistance.”**  
 The pipeline combines **BERTopic-style neural clustering**, **Computer Science Ontology (CSO)** signals, and **selective LLM gating** to recover low-density documents while keeping expensive generative steps bounded.
 
 ---
@@ -217,7 +217,7 @@ Exact filenames may vary slightly across scripts; the runner prints paths as it 
 
 ```bibtex
 @article{neurosymtrends2026,
-  title={A Neuro-Symbolic Framework for LLM-Assisted Topic Discovery and Trend Analysis in Scientific Corpora},
+  title={An Uncertainty-Gated Neuro-Symbolic Framework for High-Coverage Topic Modeling and Trend Analysis in Scholarly Corpora with LLM Assistance},
   author={Onur Demir and Murat Saran},
   journal={},
   year={2026}
@@ -238,7 +238,7 @@ MIT (or your chosen license). See `LICENSE`.
 - BERTopic / UMAP / HDBSCAN open-source authors
 - Ollama for local LLM inference
 
-Official implementation of a Neuro-Symbolic, Uncertainty-Gated Framework for topic discovery and trend analysis in scientific corpora. Combines BERTopic, CSO, and efficient LLM gating. This repository contains the source code and experimental data for the paper **"A Neuro-Symbolic Framework for LLM-Assisted Topic Discovery and Trend Analysis in Scientific Corpora"**.
+Official implementation of a Neuro-Symbolic, Uncertainty-Gated Framework for topic discovery and trend analysis in scientific corpora. Combines BERTopic, CSO, and efficient LLM gating. This repository contains the source code and experimental data for the paper **"An Uncertainty-Gated Neuro-Symbolic Framework for High-Coverage Topic Modeling and Trend Analysis in Scholarly Corpora with LLM Assistance"**.
 
 ## 📋 Overview
 
@@ -333,9 +333,8 @@ python src/experiments/reproduce_paper_results.py --seed 32
 
 The framework was evaluated on a corpus of **12,535 computer science theses** (2001-2025) obtained from Türkiye's National Thesis Center. Due to copyright restrictions, the raw dataset cannot be shared, but:
 
-- **Processed features** and **topic assignments** are available in `data/processed/`
+- **Processed features** and **topic assignments** are available in `results/`
 - **Statistical results** and **trend analysis outputs** are included in `results/`
-- A **sample dataset** for testing is provided in `data/sample/`
 
 ## 📈 Results
 
@@ -353,12 +352,12 @@ Detailed results are available in the `results/` directory and in the paper.
 If you use this framework in your research, please cite:
 
 ```bibtex
-@article{yourpaper2024,
-  title={A Neuro-Symbolic Framework for LLM-Assisted Topic Discovery and Trend Analysis in Scientific Corpora},
-  author={Your Name and Co-authors},
-  journal={IEEE Access},
-  year={2024},
-  publisher={IEEE}
+@article{saran2026,
+  title={An Uncertainty-Gated Neuro-Symbolic Framework for High-Coverage Topic Modeling and Trend Analysis in Scholarly Corpora with LLM Assistance},
+  author={Onur Demir and Murat Saran},
+  journal={},
+  year={2026},
+  publisher={}
 }
 ```
 
